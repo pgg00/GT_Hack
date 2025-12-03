@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  insight-engine:
+    build: .
+    container_name: automated-insight-engine
+    volumes:
+      - ./data/input:/app/data/input
+      - ./data/output:/app/data/output
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=gemini-1.5-pro
+      - TEMPERATURE=0.3
+    stdin_open: true
+    tty: true
+    restart: unless-stopped

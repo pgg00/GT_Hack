@@ -1,0 +1,23 @@
+# Core Dependencies
+polars==0.20.3
+google-generativeai==0.3.2
+python-dotenv==1.0.0
+watchdog==3.0.0
+
+# Machine Learning
+scikit-learn==1.4.0
+numpy==1.26.3
+
+# Visualization & Reporting
+plotly==5.18.0
+kaleido==0.2.1
+reportlab==4.0.9
+pillow==10.1.0
+
+# Utilities
+pandas==2.1.4
+openpyxl==3.1.2
+pyarrow==14.0.1
+
+# Dashboard
+streamlit==1.29.0
